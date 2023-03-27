@@ -1,0 +1,20 @@
+{
+  "name": "mycrafty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --noEmit ./index.ts && esbuild index.ts --bundle --platform=node --format=cjs --outfile=dist/index.js"
+  },
+  "bin": {
+    "crafty": "dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.10",
+    "esbuild": "^0.17.14",
+    "typescript": "^5.0.2"
+  }
+}
